@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Didact Gothic', sans-serif !important;
+    text-align: left;
+  }
+
+/*---------------------- Navbar ----------------------*/
+
+.navbar {
+    background-color: rgb(228, 228, 228) !important;
+    font-weight: 700;
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x) !important;
+    font-size: var(--bs-navbar-toggler-font-size) !important;
+    line-height: 1 !important;
+    color: #000106 !important;
+    background-color: transparent !important;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color) !important;
+    border-radius: var(--bs-navbar-toggler-border-radius) !important;
+    transition: var(--bs-navbar-toggler-transition) !important;
+}
+
+.navbar-toggler-icon{
+    color: #000106;
+}
+
+.nav-link{
+    background-color: rgb(216, 216, 216) !important;
+    padding: 3px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.nav-link:hover{
+    background-color: rgb(198, 198, 198) !important;
+
+}
+
+@media screen and (max-width: 991px) {
+    .nav-link{
+        padding-left: 50px;
+        margin-top: 20px;
+    }
+}
+/*---------------------- Hero ----------------------*/
+
+.hero-sekcija {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/pozadina2.png");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 50px;
+}
+
+.hero-sekcija-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5%, -50%);
+    color: white;
+}
+
+.hero-sekcija-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-sekcija-text button:hover {
+    background-color: #555;
+    color: white;
+}
+
+@media screen and (max-width: 580px) {
+    .hero-sekcija-text{
+        transform: translate(-25%, -50%);
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .hero-sekcija-text{
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/*---------------------- Uvod ----------------------*/
+
+.sekcija{
+    padding: 25px 50px;
+    color: white;
+    background-color: #000106;
+
+}
+
+.sekcija h1{
+    margin-bottom: 50px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.prazno-polje{
+    height: 100px;
+}
+
+span{
+    font-size: 20px;
+}
+
+.presek1{
+    background-image: radial-gradient(farthest-corner at 50% 1%,#000611, #000106);
+}
+
+#uvod{
+    background-image: radial-gradient(farthest-corner at 50% 10%,#000919, #000106);
+    padding-top: 70px;
+}
+/*---------------------- Sta je mikroskop ----------------------*/
+
+#sta-je-mikroskop{
+    background-color: #051532;
+}
+
+#sta-je-mikroskop .container img{
+    height: 300px;
+    width: 207px;
+    float: left;
+}
+
+#sta-je-mikroskop ul{
+    margin-left: 20%;
+    text-align: left;
+    width: 70%;
+}
+
+@media screen and (max-width: 466px) {
+    #sta-je-mikroskop .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sekcija{
+        padding: 25px;
+    }
+
+    #sta-je-mikroskop ul{
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+
+
+/*---------------------- Elektronski mikroskop ----------------------*/
+
+.sekcija2-1{
+    background-color: #000106;
+    background-image: radial-gradient(farthest-corner at 90% 5%,#001c50, #000106, #000106);
+    /* border-bottom: 5px #ddd dotted; */
+}
+
+
+.sekcija2-2{
+    background-color: #051532;
+    /* background: linear-gradient(to left, #00091c, #000107); */
+}
+.text-slika img{
+    height: 250px;
+    float: right;
+    margin: 20px
+}
+
+#carouselExampleControls{
+    width: 600px;
+    float: left;
+    margin-right: 20px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    color:rgba(0, 0, 0, 0.5) !important;
+}
+
+.bi{
+    color: #000106;
+}
+
+.presek2, .presek3{
+    position: relative;
+}
+
+.ispod-presek2{
+    background-color: #051532;
+}
+.separator {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.videoteka{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.videoteka iframe{
+    margin: 10px;
+}
+
+@media screen and (max-width: 676px) {
+    #carouselExampleControls{
+        width: 100%;
+        height: 45%;
+        aspect-ratio: 16 / 9;
+        margin-bottom: 20px;
+    }
+    .w-20{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text-slika{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+    }
+
+    .text-slika img{
+        width: 80%;
+        height: 56%;
+     }
+}
+
+/*---------------------- Footer ----------------------*/
+
+footer{
+    padding: 5px;
+    background-color: rgb(228, 228, 228) !important;
+    text-align: center;
+}
